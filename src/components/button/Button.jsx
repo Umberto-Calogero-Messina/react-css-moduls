@@ -1,17 +1,9 @@
-// const Button = ({ text }) => {
-//   return <button>{text}</button>;
-// };
+import styles from './Button.module.css';
 
-const Button = ({ children }) => {
-  return <button>{children}</button>;
+console.log(styles);
+
+const Button = () => {
+  return <button className={styles.button}>Learn More</button>;
 };
 
-// const person = {
-//   name: 'David',
-//   age: 34
-// };
-
-// const { name, age } = person;
-
-// console.log(name, age);
 export default Button;

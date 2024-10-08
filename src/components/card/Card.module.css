@@ -1,0 +1,15 @@
+.card {
+  width: 920px;
+  height: 500px;
+  display: flex;
+}
+.title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.subtitle {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  padding: 47.5px;
+}

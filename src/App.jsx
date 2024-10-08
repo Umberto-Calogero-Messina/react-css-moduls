@@ -1,24 +1,25 @@
-import Button from './components/button/Button';
+import Card from './components/card/Card';
+import styles from './components/card/Card.module.css';
 
 const App = () => {
   return (
-    <>
-      {/* Cuando uso uno o el otro. 
-          El primero cuando mando un props y tengo que llamar a propriedades,
-          el segundo es un children y en lugar de llamar la variable props = text, llamo a children para pintar un texto directamente que quiero poner.
-      
-      */}
-      {/* <Button text='Click Me' /> */}
-      <Button>Click Me</Button>
-      <Button>Acept</Button>
-      <Button>Cancel</Button>
-
-      {/* Como enviar datos: quitando los string toda la información se manda con {} */}
-      <Button name='David' number={34} array={[1, 2, 3, 4, 5]} obj={{ a: 1, b: 2 }} bool={true}>
-        Datos
-      </Button>
-      {/* Los componentes no puedes devolver más de 1 obj. La forma mas intuitiva è envolver todo en un Div con todas las cosas dentro. Pero como puedo hacer esto sin un div si no lo necesito? Con una etiqueta vacia <> </> que sirve para juntar las cosas pero no llega a HTML */}
-    </>
+    <div className={styles.card}>
+      <Card
+        color="orange"
+        name="sedans"
+        text="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
+      ></Card>
+      <Card
+        color="blue"
+        name="suvs"
+        text="Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures."
+      ></Card>
+      <Card
+        color="green"
+        name="luxory"
+        text="Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. "
+      ></Card>
+    </div>
   );
 };
 
