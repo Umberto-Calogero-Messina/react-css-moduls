@@ -1,15 +1,51 @@
 .card {
-  width: 920px;
-  height: 500px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 442px;
+  padding: 49px;
+}
+
+.img {
+  width: 40px;
 }
 .title {
   font-family: 'Big Shoulders Display', sans-serif;
   font-size: 40px;
   font-weight: 400;
+  color: #f2f2f2;
 }
 .subtitle {
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
-  padding: 47.5px;
+  line-height: 25px;
+  color: #f2f2f2;
+}
+
+.img_margin {
+  margin-bottom: 35px;
+}
+.title_margin {
+  margin-bottom: 25px;
+}
+
+.orange {
+  background-color: #e28625;
+}
+.blue {
+  background-color: #006971;
+}
+.green {
+  background-color: #004140;
+}
+
+.text_orange {
+  color: #e28625;
+}
+.text_blue {
+  color: #006971;
+}
+.text_green {
+  color: #004140;
 }
